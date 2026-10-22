@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Dashboard</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main class="phone">
+    <div class="status-bar">
+      <span>16:04</span>
+      <span class="status-icons" aria-label="Signal, Wi-Fi and battery">
+        <svg viewBox="0 0 54 15" aria-hidden="true">
+          <path d="M2 13V9M6 13V7M10 13V5M14 13V3" />
+          <path d="M22 5c4-4 9-4 13 0M25 8c2-2 5-2 7 0M28 11h1" />
+          <rect x="39" y="2" width="13" height="11" rx="2"/>
+          <path d="M53 5v5"/>
+          <rect x="41" y="4" width="8.5" height="7" rx="1" fill="#fff" stroke="none"/>
+        </svg>
+      </span>
+    </div>
+
+    <section class="top">
+      <header class="welcome">
+        <div>
+          <h1>Hi, Welcome Back</h1>
+          <p>Good Morning</p>
+        </div>
+        <button class="bell" aria-label="Notifications">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/>
+          </svg>
+        </button>
+      </header>
+
+      <div class="balance-row">
+        <div class="metric">
+          <div class="metric-label"><span class="tiny-icon">↗</span> Total Balance</div>
+          <strong class="balance">$7,783.00</strong>
+        </div>
+        <div class="metric expense">
+          <div class="metric-label"><span class="tiny-icon">↘</span> Total Expense</div>
+          <strong>-$1.187.40</strong>
+        </div>
+      </div>
+
+      <div class="progress">
+        <span class="progress-value">30%</span>
+        <span class="progress-rest">$20,000.00</span>
+      </div>
+      <p class="good"><span class="check">✓</span> 30% Of Your Expenses, Looks Good.</p>
+    </section>
+
+    <section class="content">
+      <div class="summary-card">
+        <div class="savings">
+          <div class="car-circle">
+            <img class="car-image" src="./poblic/image/Car.png" alt="Car savings goal icon">
+          </div>
+          <p>Savings<br>On Goals</p>
+        </div>
+        <div class="summary-divider"></div>
+        <div class="weekly">
+          <div class="weekly-line">
+            <img src="./poblic/image/Salary.png" alt="">
+              <path d="M4 13 17 5l18 10-14 9zM4 19l17 10 14-9M4 25l17 10 14-9M17 5v7l18 10"/>
+              <path d="m9 10 18 10m-18 1 18 10"/>
+            </svg>
+            <div><span>Revenue Last Week</span><strong>$4,000.00</strong></div>
+          </div>
+          <div class="rule"></div>
+          <div class="weekly-line">
+            <img src="./poblic/image/Food.png" alt="">
+              <path d="M10 5v12l-3 4v14M10 17l5 4v14M20 5v12l-3 4v14M20 17l5 4v14M30 5v30"/>
+              <path d="M10 5c-2 4-2 8 0 12m10-12c-2 4-2 8 0 12"/>
+            </svg>
+            <div><span>Food Last Week</span><strong class="blue">-$100.00</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Period">
+        <button role="tab" aria-selected="false" data-period="Daily">Daily</button>
+        <button role="tab" aria-selected="false" data-period="Weekly">Weekly</button>
+        <button role="tab" aria-selected="true" class="active" data-period="Monthly">Monthly</button>
+      </div>
+
+      <div class="transactions">
+        <article class="transaction">
+          <img src="./poblic/image/Icon Salary.png" alt="" class="transaction-icon-image">
+          <div class="transaction-main"><b>Salary</b><small>18:27 - April 30</small></div>
+          <span class="category">Monthly</span>
+          <strong class="amount">$4.000,00</strong>
+        </article>
+        <article class="transaction">
+          <img src="./poblic/image/Icon Groceries.png" alt="" class="transaction-icon-image">
+          <div class="transaction-main"><b>Groceries</b><small>17:00 - April 24</small></div>
+          <span class="category">Pantry</span>
+          <strong class="amount blue">-$100,00</strong>
+        </article>
+        <article class="transaction">
+          <img src="./poblic/image/Icon Rent.png" alt="" class="transaction-icon-image">
+          <div class="transaction-main"><b>Rent</b><small>8:30 - April 15</small></div>
+          <span class="category">Rent</span>
+          <strong class="amount blue">-$674,40</strong>
+        </article>
+      </div>
+    </section>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button class="nav-item selected" aria-label="Home">
+        <svg viewBox="0 0 32 32"><path d="m4 14 12-10 12 10v14H19v-9h-6v9H4z"/></svg>
+      </button>
+      <button class="nav-item" aria-label="Statistics">
+        <svg viewBox="0 0 32 32"><circle cx="14" cy="14" r="11"/><path d="M22 22l7 7M9 19v-5m5 5V9m5 10v-8"/></svg>
+      </button>
+      <button class="nav-item" aria-label="Transfers">
+        <svg viewBox="0 0 32 32">
+          <path d="M4 12h22l-5-5m5 5-5 5"/>
+          <path d="M28 20H6l5-5m-5 5 5 5"/>
+        </svg>
+      </button>
+      <button class="nav-item" aria-label="Cards">
+        <svg viewBox="0 0 32 32"><path d="m3 10 13-7 13 7-13 7zM3 16l13 7 13-7M3 22l13 7 13-7"/></svg>
+      </button>
+      <button class="nav-item" aria-label="Profile">
+        <svg viewBox="0 0 32 32"><circle cx="16" cy="9" r="6"/><path d="M5 28v-3c0-6 4-9 11-9s11 3 11 9v3z"/></svg>
+      </button>
+    </nav>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
